@@ -1,0 +1,15 @@
+{
+  "name": "nodejswebapp6",
+  "version": "1.0.0",
+  "description": "nodejsapp6",
+  "main": "server.js",
+  "dependencies": {
+    "ejs": "^2.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeremie MARVILLIER",
+  "license": "ISC"
+}

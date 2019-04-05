@@ -1,0 +1,21 @@
+package test;
+
+public class Class2 {
+	
+	String ville;
+	String pays;
+	int nbPoeple;
+
+	public Class2() {
+		// TODO Auto-generated constructor stub
+		ville = "une ville";
+		pays = "un pays"; 
+		nbPoeple = 12598;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

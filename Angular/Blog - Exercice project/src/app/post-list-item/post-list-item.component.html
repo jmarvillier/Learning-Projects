@@ -1,0 +1,21 @@
+<li  [ngClass]="{'list-group-item' : true,
+                 'list-group-item-success': post.loveIts > 0,
+                 'list-group-item-danger': post.loveIts < 0 }">
+  <div class="float-left postHearder">{{post.title}}</div>
+  <div class="float-right postHearder postInfos">{{post.created_at | date: 'short' }}</div>
+
+  <div class="postBody">
+      {{post.content}}
+      <div class="postVotes">
+          <button style="margin:2px;" type="button" class="btn btn-success" (click)="onLoveItClick()">Love it!</button>
+          <button style="margin:2px;" type="button" class="btn btn-danger" (click)="onDontLoveItClick()">Don't love it!</button>
+          <div class="float-right">
+              <div [ngClass]="{'list-group-item' : true,
+              'list-group-item-success': post.loveIts > 0,
+              'list-group-item-danger': post.loveIts < 0 }" style="width:20px;height: 20px;"
+              *ngIf="post.loveIts != 0"
+              style="padding:2.5px;" >{{post.loveIts > 0 ? post.loveIts : post.loveIts * -1}}</div>
+          </div>          
+      </div>      
+  </div>
+</li>

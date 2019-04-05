@@ -1,0 +1,16 @@
+{
+  "name": "nodejs-web-app4",
+  "version": "0.0.0",
+  "description": "NodejsWebApp4",
+  "main": "server.js",
+  "author": {
+    "name": "MARVILLIER"
+  },
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "ejs-locals": "^1.0.2",
+    "express": "^4.16.4",
+    "jade": "^1.11.0",
+    "vash": "^0.12.6"
+  }
+}

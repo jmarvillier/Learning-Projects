@@ -1,0 +1,2 @@
+C:\dev\nodejs\NodejsWebApp6\NodejsWebApp6\obj\Debug\NodejsWebApp6.njsproj.CoreCompileInputs.cache
+C:\dev\nodejs\NodejsWebApp6\NodejsWebApp6\bin\Microsoft.NodejsTools.WebRole.dll

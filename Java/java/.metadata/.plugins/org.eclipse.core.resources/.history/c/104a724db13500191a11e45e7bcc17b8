@@ -1,0 +1,23 @@
+package test;
+
+import java.util.Scanner;
+
+public class Class1 {
+
+	public static void main(String[] args) {
+		String text = "Et patati et patata";
+		System.out.println(text);
+		System.out.print("Hello World");
+		System.out.println("!!!");
+		System.out.println("toto");		
+		
+		System.out.println("");
+		Scanner scan = new Scanner(System.in);
+		
+		String str = scan.nextLine();
+		
+		System.out.println(str);
+		scan.close();
+	}
+
+}
