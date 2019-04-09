@@ -43,7 +43,7 @@ const appRoutes: Routes = [
     HttpClientModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [AuthService,BooksService, AuthGuardService],
+  providers: [AuthService, BooksService, AuthGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
