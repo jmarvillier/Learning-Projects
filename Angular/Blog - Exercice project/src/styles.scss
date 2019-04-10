@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-$main-blue:rgb(187, 203, 224);
-$main-gray: lightgray;
+$main-blue:#343a40;
+$main-gray:lightgray;
 
 .list{
     border-radius: 10px;
@@ -26,6 +26,7 @@ $main-gray: lightgray;
     font-weight: 600;    
     background-color: $main-blue;
     text-decoration: none;
+    color: white;
 }
 
 .postVotes{
@@ -39,7 +40,7 @@ nav li{
     margin-bottom: 10px;   
 }
 
-nav li a, nav li a:hover{
+a .linkButton, a:hover .linkButton, nav li a, nav li a:hover{
     color: white;
     font-weight: bolder;
     text-decoration: none;
@@ -57,5 +58,6 @@ nav li a, nav li a:hover{
 }
 
 .list-group-item-neutre{
-    background-color: rgb(83, 148, 223) ;
+    background-color: #99caff ;
+    color:#007bff;
 }
