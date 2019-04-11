@@ -1,0 +1,17 @@
+﻿<body>
+    <table>
+        <tr>
+            <th>Nom</th>
+            <th>Age</th>
+        </tr>
+
+        @foreach (ClientApp.Models.Client client in ViewData["Clients"]
+as List<ClientApp.Models.Client>)
+        {
+            <tr>
+                <td>@client.Name</td>
+                <td>@client.Age</td>
+            </tr>
+        }
+    </table>
+</body>

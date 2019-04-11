@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using ClientApp.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -32,6 +28,7 @@ namespace ClientApp
             });
 
 
+            services.AddSingleton<IClientsRepository, InMemoryClientsRepository>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
@@ -56,8 +53,16 @@ namespace ClientApp
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
+                    name: "clients",
+                    template: "{controller=Clients}/{action=GetClients}");
+                routes.MapRoute(
+                    name: "add",
+                    template: "{controller}/{action}/{value1}-{value2}",
+                    defaults: new { controller = "Calculator", action = "Add", value1 = 0, value2 = 0 },
+                    constraints: new { value1 = @"\d+", value2 = @"\d+" });
+                routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Home}/{action=Index}/{*id?}");
             });
         }
     }
